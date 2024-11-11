@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "306919248838",
+    "project_id": "applan1",
+    "storage_bucket": "applan1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306919248838:android:5ed6ab51db0f5b142398c7",
+        "android_client_info": {
+          "package_name": "com.company.applan1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3gisoFfug7K-opJzkM1Bnu5NAjXmbTVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306919248838:android:a277f6df1bfa24482398c7",
+        "android_client_info": {
+          "package_name": "com.example.applan1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3gisoFfug7K-opJzkM1Bnu5NAjXmbTVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
