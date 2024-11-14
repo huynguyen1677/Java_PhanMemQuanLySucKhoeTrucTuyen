@@ -20,7 +20,17 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
+        <activity android:name=".ForgotPasswordActivity">
+            <!-- Thêm các cấu hình nếu cần thiết -->
+        </activity>
+        <activity android:name=".UserInfoActivity"
+            android:exported="true">
+            <!-- Nếu Activity này cần khởi động từ bên ngoài ứng dụng, thêm intent-filter -->
+            <intent-filter>
+                <action android:name="com.example.applan1.USER_INFO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".SignUpActivity" android:exported="true" />
 
         <!-- MainActivity will no longer be a launch activity -->
