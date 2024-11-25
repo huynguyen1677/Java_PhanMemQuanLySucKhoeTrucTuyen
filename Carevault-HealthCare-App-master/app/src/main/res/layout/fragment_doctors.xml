@@ -23,7 +23,7 @@
             android:layout_marginStart="50dp"
             android:fontFamily="@font/latoheavy"
             android:gravity="center_horizontal"
-            android:text="My Appointments"
+            android:text="Cuộc hẹn của tôi"
             android:textColor="#1D212D"
             android:textSize="22sp" />
 
@@ -39,17 +39,17 @@
             <com.google.android.material.tabs.TabItem
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Upcoming" />
+                android:text="Sắp tới" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Completed" />
+                android:text="Đã hoàn thành" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Cancelled" />
+                android:text="Đã hủy" />
         </com.google.android.material.tabs.TabLayout>
     </RelativeLayout>
 

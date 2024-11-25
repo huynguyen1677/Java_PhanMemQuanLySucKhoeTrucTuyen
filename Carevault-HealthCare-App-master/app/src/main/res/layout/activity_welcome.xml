@@ -45,7 +45,7 @@
             android:background="@drawable/welcome_solidrect_1"
             android:fontFamily="@font/latobold"
             android:gravity="center"
-            android:text="Login"
+            android:text="Đăng nhập"
             android:textAlignment="center"
             android:textColor="#94a9fd"
             android:textSize="25sp"
@@ -62,7 +62,7 @@
             android:background="@drawable/welcome_rect_1"
             android:fontFamily="@font/latobold"
             android:gravity="center"
-            android:text="Sign Up"
+            android:text="Đăng ký"
             android:textAlignment="center"
             android:textColor="#ffffff"
             android:textSize="25sp"
@@ -83,7 +83,7 @@
             android:fontFamily="@font/latoheavy"
             android:gravity="center_horizontal|center_vertical"
             android:lineSpacingExtra="3sp"
-            android:text="Let's get started!"
+            android:text="Hãy bắt đầu nào!"
             android:textColor="#ffffff"
             android:textSize="28sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -119,7 +119,7 @@
             android:background="@drawable/welcome_solidrect_1"
             android:fontFamily="@font/latobold"
             android:gravity="center"
-            android:text="Emergency"
+            android:text="Khẩn cấp"
             android:textAlignment="center"
             android:textColor="#94a9fd"
             android:textSize="25sp"
@@ -135,7 +135,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/latoheavy"
             android:gravity="center"
-            android:text="Login to enjoy the features we've \nprovided, and stay healthy!"
+            android:text="Đăng nhập để tận hưởng các tính năng mà chúng tôi đã \nchuẩn bị, và giữ gìn sức khỏe!"
             android:textColor="#eff1ff"
             android:textSize="22sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -143,7 +143,5 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.48000002" />
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

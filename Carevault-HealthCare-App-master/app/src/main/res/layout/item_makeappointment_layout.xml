@@ -34,7 +34,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/latobold"
-                android:text="Dr Willium Smith"
+                android:text="Bác sĩ Nguyễn Văn A"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -51,7 +51,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/latoregular"
-                    android:text="Dentist"
+                    android:text="Nha sĩ"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
 
@@ -60,7 +60,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
-                    android:text="AIIMS"
+                    android:text="Bệnh viện AIIMS"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
             </LinearLayout>
@@ -83,7 +83,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:fontFamily="@font/latoregular"
-                    android:text="Dentist"
+                    android:text="Hà Nội, Việt Nam"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -104,7 +104,7 @@
             android:layout_height="match_parent"
             android:fontFamily="@font/latobold"
             android:gravity="center"
-            android:text="Make Appointement"
+            android:text="Đặt lịch hẹn"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />

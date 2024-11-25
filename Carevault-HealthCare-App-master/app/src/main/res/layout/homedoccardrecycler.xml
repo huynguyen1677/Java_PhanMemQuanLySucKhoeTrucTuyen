@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/latobold"
-            android:text="Dr.Marcus Horizon"
+            android:text="Bác sĩ Marcus Horizon"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
@@ -43,7 +43,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dentist"
+                android:text="Nha sĩ"
                 android:fontFamily="@font/latoregular"
                 android:textColor="#ffffff"
                 android:textSize="15sp" />
@@ -62,7 +62,7 @@
                 android:layout_marginStart="2dp"
                 android:layout_marginBottom="0dp"
                 android:fontFamily="@font/latoregular"
-                android:text="Royal Hospital"
+                android:text="Bệnh viện Hoàng Gia"
                 android:textColor="#ffffff"
                 android:textSize="15sp" />
         </LinearLayout>

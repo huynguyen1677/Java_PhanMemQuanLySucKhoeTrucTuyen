@@ -41,7 +41,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="59dp"
             android:layout_toStartOf="@+id/pagete"
-            android:contentDescription="notify"
+            android:contentDescription="thông báo"
             android:src="@drawable/locationpin" />
 
         <TextView
@@ -83,7 +83,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:iconifiedByDefault="false"
-                app:queryHint="Search doctor, drugs, articles..." />
+                app:queryHint="Tìm bác sĩ, thuốc, bài viết..." />
 
             <LinearLayout
                 android:id="@+id/mainbuttons"
@@ -105,7 +105,7 @@
                         android:layout_height="65dp"
                         android:layout_centerVertical="true"
                         android:background="@drawable/homepageicons"
-                        android:contentDescription="notify"
+                        android:contentDescription="thông báo"
                         android:src="@drawable/stethoscope" />
 
                     <TextView
@@ -114,7 +114,7 @@
                         android:layout_below="@+id/Doctor"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="23dp"
-                        android:text="Doctors"
+                        android:text="Bác sĩ"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
                 </RelativeLayout>
@@ -130,7 +130,7 @@
                         android:layout_height="65dp"
                         android:layout_centerVertical="true"
                         android:background="@drawable/homepageicons"
-                        android:contentDescription="notify"
+                        android:contentDescription="thông báo"
                         android:src="@drawable/outline_health_and_safety_24" />
 
                     <TextView
@@ -139,7 +139,7 @@
                         android:layout_below="@+id/article"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="23dp"
-                        android:text="Hospitals"
+                        android:text="Bệnh viện"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
                 </RelativeLayout>
@@ -155,7 +155,7 @@
                         android:layout_height="65dp"
                         android:layout_centerVertical="true"
                         android:background="@drawable/homepageicons"
-                        android:contentDescription="notify"
+                        android:contentDescription="thông báo"
                         android:src="@drawable/ambulancecar" />
 
                     <TextView
@@ -164,7 +164,7 @@
                         android:layout_below="@+id/hospital"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="23dp"
-                        android:text="MediCar"
+                        android:text="Xe cấp cứu"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
                 </RelativeLayout>
@@ -182,7 +182,7 @@
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:background="@drawable/homepageicons"
-                        android:contentDescription="notify"
+                        android:contentDescription="thông báo"
                         android:src="@drawable/redemergency" />
 
                     <TextView
@@ -191,7 +191,7 @@
                         android:layout_below="@+id/ambulance"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="23dp"
-                        android:text="Emergency"
+                        android:text="Khẩn cấp"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
                 </RelativeLayout>
@@ -209,7 +209,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Upcoming Appointment"
+                    android:text="Cuộc hẹn sắp tới"
                     android:textColor="#1D212D"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -224,7 +224,7 @@
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:fontFamily="@font/latobold"
                     android:gravity="bottom"
-                    android:text="SEE ALL"
+                    android:text="XEM TẤT CẢ"
                     android:textColor="#1D212D"
                     android:textSize="15sp" />
             </RelativeLayout>
@@ -274,7 +274,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Dentist"
+                            android:text="Nha sĩ"
                             android:textColor="#ffffff"
                             android:textSize="14sp" />
 
@@ -290,7 +290,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="2dp"
                             android:layout_marginBottom="0dp"
-                            android:text="Royal Hospital"
+                            android:text="Bệnh viện Hoàng Gia"
                             android:textColor="#ffffff"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -319,7 +319,7 @@
                         android:layout_marginTop="12dp"
                         android:layout_marginEnd="5dp"
                         android:fontFamily="@font/latobold"
-                        android:text="Sept 10, 2023"
+                        android:text="10 tháng 9, 2023"
                         android:textColor="@color/white"
                         android:textSize="12sp" />
 
@@ -348,7 +348,7 @@
                         android:layout_marginTop="12dp"
                         android:layout_marginEnd="5dp"
                         android:fontFamily="@font/latobold"
-                        android:text="05:00 pm"
+                        android:text="05:00 chiều"
                         android:textColor="@color/white"
                         android:textSize="12sp" />
 
@@ -368,7 +368,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Doctor Speciality"
+                    android:text="Chuyên khoa bác sĩ"
                     android:textColor="#1D212D"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -382,7 +382,7 @@
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:fontFamily="@font/latobold"
                     android:gravity="bottom"
-                    android:text="SEE ALL"
+                    android:text="XEM TẤT CẢ"
                     android:textColor="#1D212D"
                     android:textSize="15sp" />
             </RelativeLayout>
@@ -412,7 +412,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Top Doctors"
+                    android:text="Bác sĩ hàng đầu"
                     android:textColor="#1D212D"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -426,7 +426,7 @@
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:fontFamily="@font/latobold"
                     android:gravity="bottom"
-                    android:text="SEE ALL"
+                    android:text="XEM TẤT CẢ"
                     android:textColor="#1D212D"
                     android:textSize="15sp" />
             </RelativeLayout>
@@ -453,7 +453,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/selected_background"
                         android:gravity="center"
-                        android:text="All"
+                        android:text="Tất cả"
                         android:textColor="@color/white"
                         android:textStyle="bold" />
 
@@ -463,7 +463,7 @@
                         android:layout_marginStart="10dp"
                         android:background="@drawable/tab_background"
                         android:gravity="center"
-                        android:text="General"
+                        android:text="Chuyên khoa tổng quát"
                         android:textColor="#94a9fd"
                         android:textStyle="bold" />
 
@@ -473,7 +473,7 @@
                         android:layout_marginStart="10dp"
                         android:background="@drawable/tab_background"
                         android:gravity="center"
-                        android:text="Dentist"
+                        android:text="Nha sĩ"
                         android:textColor="#94a9fd"
                         android:textStyle="bold" />
 
@@ -483,15 +483,13 @@
                         android:layout_marginStart="10dp"
                         android:background="@drawable/tab_background"
                         android:gravity="center"
-                        android:text="Otology"
+                        android:text="Tai mũi họng"
                         android:textColor="#94a9fd"
                         android:textStyle="bold" />
                 </LinearLayout>
             </HorizontalScrollView>
 
-
         </RelativeLayout>
     </androidx.core.widget.NestedScrollView>
 
 </RelativeLayout>
-

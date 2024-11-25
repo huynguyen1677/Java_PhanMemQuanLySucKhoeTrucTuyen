@@ -28,7 +28,7 @@
             android:layout_marginStart="50dp"
             android:fontFamily="@font/latoheavy"
             android:gravity="center_horizontal"
-            android:text="My Profile"
+            android:text="Hồ sơ"
             android:textColor="#1D212D"
             android:textSize="22sp" />
     </RelativeLayout>
@@ -76,7 +76,7 @@
                     android:fontFamily="@font/latoheavy"
                     android:gravity="top"
                     android:lineSpacingExtra="-2sp"
-                    android:text="Name"
+                    android:text="Tên"
                     android:textColor="#1D212D"
                     android:textSize="18sp" />
 
@@ -132,7 +132,7 @@
                     android:fontFamily="@font/latoheavy"
                     android:gravity="top"
                     android:lineSpacingExtra="-2sp"
-                    android:text="Health Records"
+                    android:text="Hồ sơ sức khỏe"
                     android:textColor="#ffffff"
                     android:textSize="18sp" />
 
@@ -153,7 +153,7 @@
                     android:fontFamily="@font/latoheavy"
                     android:gravity="top"
                     android:lineSpacingExtra="-2sp"
-                    android:text="Help and Support"
+                    android:text="Trợ giúp và hỗ trợ"
                     android:textColor="#ffffff"
                     android:textSize="18sp" />
 
@@ -174,7 +174,7 @@
                     android:fontFamily="@font/latoheavy"
                     android:gravity="top"
                     android:lineSpacingExtra="-2sp"
-                    android:text="Feedback"
+                    android:text="Đánh giá"
                     android:textColor="#ffffff"
                     android:textSize="18sp" />
 
@@ -195,7 +195,7 @@
                     android:fontFamily="@font/latoheavy"
                     android:gravity="top"
                     android:lineSpacingExtra="-2sp"
-                    android:text="Settings"
+                    android:text="Cài đặt"
                     android:textColor="#ffffff"
                     android:textSize="18sp" />
 
@@ -243,7 +243,7 @@
                 android:background="@drawable/selected_background"
                 android:fontFamily="@font/latoheavy"
                 android:gravity="center"
-                android:text="Logout"
+                android:text="Đăng xuất"
                 android:textColor="#ffffff"
                 android:textSize="20sp" />
 

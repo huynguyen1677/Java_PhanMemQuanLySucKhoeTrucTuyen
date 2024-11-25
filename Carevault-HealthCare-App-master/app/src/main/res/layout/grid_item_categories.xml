@@ -27,7 +27,7 @@
         android:gravity="center"
         android:fontFamily="@font/latoregular"
         android:layout_marginTop="8dp"
-        android:text="Name"
+        android:text="Tên"
         android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="15sp" />
