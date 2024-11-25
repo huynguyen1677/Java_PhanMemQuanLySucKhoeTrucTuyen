@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".Articles.TrendArticle">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +16,7 @@
         android:backgroundTint="@color/black"
         android:fontFamily="@font/latobold"
         android:textColor="#000000"
-        android:text="Trending Articles"
+        android:text="Các bài viết đang thịnh hành"
         android:gravity="center"
         android:padding="10dp"
         android:id="@+id/fixed"/>
@@ -34,8 +35,8 @@
         android:id="@+id/swipe"
         android:layout_below="@+id/fixed"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
+
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_below="@id/fixed"
