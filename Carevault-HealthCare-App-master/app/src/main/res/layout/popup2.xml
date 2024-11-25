@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="330sp"
+    android:layout_height="420sp"
+    android:layout_gravity="center"
+    android:background="@drawable/popupbox"
+    android:backgroundTint="#eff1ff"
+    android:padding="4dp">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        app.lottie_autoplay="true"
+        app.lottie_loop="true"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18sp"
+        app:lottie_rawRes="@raw/wrong" />
+
+    <TextView
+        android:id="@+id/paydisc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lottie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/latobold"
+        android:gravity="center"
+        android:padding="5sp"
+        android:text="Looks like Slot is not available for the date you selected. Please choose another slot."
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/doneb"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paydisc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/selected_background"
+        android:text="Ok"
+        android:textSize="14sp" />
+</RelativeLayout>

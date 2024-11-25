@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "386549135323",
+    "project_id": "care-cf65e",
+    "storage_bucket": "care-cf65e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386549135323:android:dddac2fdc8fccd559f99fe",
+        "android_client_info": {
+          "package_name": "com.example.carevault"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbfH-mLJED8AO3fI-6UYY5Crl0gdVSz9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

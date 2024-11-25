@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".DrawerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Booking.DateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Booking.Categories"
+            android:exported="false" />
+        <activity
+            android:name=".Booking.PatientDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Booking.temp"
+            android:exported="false" />
+        <activity
+            android:name=".emergency.EmergencyActivityCopy"
+            android:exported="false" />
+        <activity
+            android:name=".PatientInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".emergency.EmergencyProcedureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".emergency.EmergencyAmbulanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".emergency.EmergencyCallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".emergency.EmergencyLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".emergency.EmergencySignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Articles.Diet"
+            android:exported="false" />
+        <activity
+            android:name=".Articles.Fitness"
+            android:exported="false" />
+        <activity
+            android:name=".Articles.RelatedArticles"
+            android:exported="false" />
+        <activity
+            android:name=".Articles.Covid"
+            android:exported="false" />
+        <activity
+            android:name=".Articles.TrendArticle"
+            android:exported="false" />
+        <activity
+            android:name=".MainFragment"
+            android:exported="false" />
+        <activity
+            android:name=".profile.AppSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profile.AppFeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profile.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profile.HelpSupportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profile.HealthRecordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profile.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.NewPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.PassVerificationCode"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.PasswordResetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".emergency.EmergencyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.NumberVerifyOtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.LoginWithNumberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Alarms.AppointmentReminders"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.HealthInfoInputActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Onboard2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Onboard1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".authentication.LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".doctordetailMainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".Booking.booking"
+            android:exported="false" />
+        <activity
+            android:name=".TophospitalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TopambulanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".Alarms.Notification"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.carevault.ACTION_RECEIVE_ALARM" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

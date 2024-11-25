@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fafaff"
+        tools:context=".profile.AppFeedbackActivity">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="28dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_begin="29dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="383dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton112"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/backbutton"
+            android:contentDescription="TODO"
+            app:layout_constraintEnd_toStartOf="@+id/headline2"
+            app:layout_constraintHorizontal_bias="0.259"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/headline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="29dp"
+            android:fontFamily="@font/latoheavy"
+            android:gravity="center"
+            android:lineSpacingExtra="3sp"
+            android:text="Feedback"
+            android:textColor="#1D212D"
+            android:textSize="26sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/textView11116"
+            android:layout_width="355dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="197dp"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/logintextareafield"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/latoregular"
+            android:hint="Write feedback"
+            android:inputType="textEmailAddress"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:textAlignment="textStart"
+            android:textColor="#1D212D"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5ss"
+            android:layout_width="355dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="395dp"
+            android:background="@drawable/loginsolidrect"
+            android:fontFamily="@font/latobold"
+            android:gravity="center"
+            android:text="Submit Feedback"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.013" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
