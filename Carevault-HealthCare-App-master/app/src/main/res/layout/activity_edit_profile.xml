@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:background="@drawable/selected_background"
             android:fontFamily="@font/latobold"
             android:gravity="center"
-            android:text="Update"
+            android:text="Cập nhật"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="23sp"
@@ -38,7 +38,7 @@
             android:layout_marginStart="28dp"
             android:layout_marginTop="29dp"
             android:background="@drawable/backbutton"
-            android:contentDescription="TODO"
+            android:contentDescription="Trở về"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -52,7 +52,7 @@
             android:fontFamily="@font/latoheavy"
             android:gravity="top"
             android:lineSpacingExtra="-2sp"
-            android:text="Edit Profile"
+            android:text="Chỉnh sửa hồ sơ"
             android:textColor="#1D212D"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/frame_117122"
@@ -93,7 +93,7 @@
             android:layout_marginTop="29dp"
             android:fontFamily="@font/latoheavy"
             android:gravity="center"
-            android:text="My Profile"
+            android:text="Hồ sơ của tôi"
             android:textColor="#1D212D"
             android:textSize="26sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -122,7 +122,7 @@
                 android:gravity="top"
                 android:inputType="text"
                 android:lineSpacingExtra="-2sp"
-                android:text="Name"
+                android:text="Họ và tên"
                 android:textColor="#1D212D"
                 android:textSize="18sp" />
 
@@ -136,7 +136,7 @@
                 android:gravity="top"
                 android:inputType="number"
                 android:lineSpacingExtra="-2sp"
-                android:text="Mobile Number"
+                android:text="Số điện thoại"
                 android:textColor="#1D212D"
                 android:textSize="18sp" />
 

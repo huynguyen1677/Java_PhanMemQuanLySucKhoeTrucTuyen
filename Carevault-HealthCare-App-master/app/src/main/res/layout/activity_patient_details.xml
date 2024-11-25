@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:fontFamily="@font/latoheavy"
-            android:text="Patient Detail"
+            android:text="Chi tiết bệnh nhân"
             android:textColor="#1D212D"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -52,15 +52,15 @@
             android:layout_height="wrap_content"
             android:checked="true"
             android:switchMinWidth="56dp"
-            android:textOff="OFF"
-            android:textOn="ON" />
+            android:textOff="TẮT"
+            android:textOn="BẬT" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_marginLeft="10dp"
             android:fontFamily="@font/latobold"
-            android:text="For Self"
+            android:text="Cho bản thân"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -82,7 +82,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:fontFamily="@font/latobold"
-            android:text="Full Name"
+            android:text="Họ và tên"
             android:textColor="#000000"
             android:textSize="16sp" />
 
@@ -93,12 +93,10 @@
             android:layout_margin="3dp"
             android:backgroundTint="@android:color/transparent"
             android:fontFamily="@font/latoregular"
-            android:hint="Enter Name"
+            android:hint="Nhập tên"
             android:padding="10dp"
             android:textColor="#000000"
-            android:textSize="16sp"
-
-            />
+            android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -116,8 +114,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:fontFamily="@font/latobold"
-            android:inputType="number"
-            android:text="Your Age"
+            android:text="Tuổi của bạn"
             android:textColor="#000000"
             android:textSize="16sp" />
 
@@ -131,9 +128,7 @@
             android:hint="20"
             android:padding="10dp"
             android:textColor="#000000"
-            android:textSize="16sp"
-
-            />
+            android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -151,7 +146,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:fontFamily="@font/latobold"
-            android:text="Gender"
+            android:text="Giới tính"
             android:textColor="#000000"
             android:textSize="16sp" />
 
@@ -181,7 +176,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:fontFamily="@font/latobold"
-            android:text="Your Problem"
+            android:text="Vấn đề của bạn"
             android:textColor="#000000"
             android:textSize="16sp" />
 
@@ -192,11 +187,10 @@
             android:layout_margin="3dp"
             android:backgroundTint="@android:color/transparent"
             android:fontFamily="@font/latoregular"
-            android:hint="Describe the problem"
+            android:hint="Mô tả vấn đề"
             android:padding="10dp"
             android:textColor="#000000"
-            android:textSize="16sp"
-            />
+            android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -222,6 +216,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/loader"
         android:background="@drawable/selected_background"
-        android:fontFamily="@font/latoheavy"
-        android:text="Next" />
+        android:fontFamily="@font/latobold"
+        android:text="Tiếp theo"
+        android:textColor="#FFFFFF" />
 </RelativeLayout>

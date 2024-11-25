@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -23,7 +23,7 @@
             android:fontFamily="@font/latoheavy"
             android:gravity="center"
             android:lineSpacingExtra="-2sp"
-            android:text="Emergency Call"
+            android:text="Cuộc gọi khẩn cấp"
             android:textColor="#1D212D"
             android:textSize="26sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -89,7 +89,7 @@
                 android:fontFamily="@font/latoheavy"
                 android:gravity="top"
                 android:lineSpacingExtra="-2sp"
-                android:text="Name"
+                android:text="Tên"
                 android:textColor="#ffffff"
                 android:textSize="20sp" />
 
@@ -104,7 +104,7 @@
                 android:background="@drawable/solidred_rect"
                 android:fontFamily="@font/latoheavy"
                 android:gravity="center"
-                android:text="Call"
+                android:text="Gọi"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp" />
 
@@ -155,7 +155,7 @@
             android:layout_marginStart="196dp"
             android:layout_marginTop="220dp"
             android:fontFamily="@font/latobold"
-            android:text="OR"
+            android:text="HOẶC"
             android:textColor="#C58BF2"
             android:textSize="15sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -172,7 +172,7 @@
             android:fontFamily="@font/latoheavy"
             android:gravity="top"
             android:lineSpacingExtra="-2sp"
-            android:text="Enter a number to call - "
+            android:text="Nhập số để gọi - "
             android:textColor="#1D212D"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -200,7 +200,7 @@
                 android:background="@drawable/solidred_rect"
                 android:fontFamily="@font/latoheavy"
                 android:gravity="center"
-                android:text="Call"
+                android:text="Gọi"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp" />
 
@@ -215,7 +215,7 @@
                 android:background="@drawable/logintextareafield"
                 android:drawablePadding="15dp"
                 android:fontFamily="@font/latoregular"
-                android:hint="Mobile Number"
+                android:hint="Số điện thoại di động"
                 android:inputType="number"
                 android:paddingStart="25dp"
                 android:paddingEnd="25dp"
