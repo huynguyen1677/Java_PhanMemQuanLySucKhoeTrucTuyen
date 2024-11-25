@@ -8,6 +8,7 @@ import com.example.applan1.databinding.ActivitySignInBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseAuthInvalidUserException
+import com.google.firebase.firestore.FirebaseFirestore
 
 class SignInActivity : AppCompatActivity() {
 
@@ -21,16 +22,19 @@ class SignInActivity : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
+        // Chuyển đến màn hình đăng ký
         binding.textView.setOnClickListener {
             val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
         }
+
+        // Chuyển đến màn hình quên mật khẩu
         binding.fogetPass.setOnClickListener {
-            // Chuyển đến màn hình quên mật khẩu
             val intent = Intent(this, ForgotPasswordActivity::class.java)
             startActivity(intent)
         }
 
+        // Đăng nhập khi người dùng nhấn nút đăng nhập
         binding.button.setOnClickListener {
             val email = binding.emailEt.text.toString()
             val pass = binding.passET.text.toString()
@@ -38,10 +42,30 @@ class SignInActivity : AppCompatActivity() {
             if (email.isNotEmpty() && pass.isNotEmpty()) {
                 firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener { task ->
                     if (task.isSuccessful) {
-                        Toast.makeText(this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show()
-                        val intent = Intent(this, MainActivity::class.java)
-                        startActivity(intent)
-                        finish()
+                        val userId = firebaseAuth.currentUser?.uid
+                        if (userId != null) {
+                            val db = FirebaseFirestore.getInstance()
+                            val userDocRef = db.collection("users").document(userId)
+
+                            userDocRef.get().addOnCompleteListener { userTask ->
+                                if (userTask.isSuccessful) {
+                                    if (!userTask.result.exists()) {
+                                        // Nếu người dùng chưa có thông tin, chuyển đến màn hình nhập thông tin
+                                        val intent = Intent(this, CompleteProfileActivity::class.java)
+                                        startActivity(intent)
+                                        finish()
+                                    } else {
+                                        // Người dùng đã có thông tin, chuyển đến màn hình chính
+                                        Toast.makeText(this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show()
+                                        val intent = Intent(this, MainActivity::class.java)
+                                        startActivity(intent)
+                                        finish()
+                                    }
+                                } else {
+                                    Toast.makeText(this, "Lỗi khi truy vấn Firestore", Toast.LENGTH_SHORT).show()
+                                }
+                            }
+                        }
                     } else {
                         val errorMessage = when (task.exception) {
                             is FirebaseAuthInvalidUserException -> "Email không tồn tại. Vui lòng kiểm tra lại."
@@ -52,7 +76,7 @@ class SignInActivity : AppCompatActivity() {
                     }
                 }
             } else {
-                Toast.makeText(this, "Không được để trống trường nào!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Vui lòng nhập email và mật khẩu!", Toast.LENGTH_SHORT).show()
             }
         }
     }

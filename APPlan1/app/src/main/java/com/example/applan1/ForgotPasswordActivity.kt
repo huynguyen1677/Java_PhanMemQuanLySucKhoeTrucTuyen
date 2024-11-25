@@ -46,10 +46,7 @@ class ForgotPasswordActivity : AppCompatActivity() {
                     Toast.makeText(this, "Đã gửi email khôi phục mật khẩu!", Toast.LENGTH_SHORT).show()
 
                     // Chuyển người dùng đến màn hình nhập mật khẩu mới
-                    val intent = Intent(this, ResetPasswordActivity::class.java)
-                    intent.putExtra("email", email) // Truyền email người dùng
-                    startActivity(intent)
-                    finish()
+
 
                 } else {
                     Toast.makeText(this, "Lỗi: ${task.exception?.message}", Toast.LENGTH_SHORT).show()

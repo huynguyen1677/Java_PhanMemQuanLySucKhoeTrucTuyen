@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">LoginAndSignUp</string>
+    <string-array name="gender_options">
+        <item>Nam</item>
+        <item>Nữ</item>
+        <item>Khác</item>
+    </string-array>
 </resources>

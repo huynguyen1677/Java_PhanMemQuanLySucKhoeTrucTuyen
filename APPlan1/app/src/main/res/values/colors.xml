@@ -10,6 +10,9 @@
 <color name="blue">#FF1E90FF</color>
 <color name="blue_nhat">#ADD8E6</color>
     <color name="yellow">#FFC801</color>
+    <color name="colorPrimary">#6200EE</color> <!-- Màu chính -->
+    <color name="colorPrimaryDark">#3700B3</color> <!-- Màu tối hơn cho thanh trạng thái -->
+    <color name="colorAccent">#03DAC5</color> <!-- Màu nhấn -->
 
 
 
