@@ -23,7 +23,7 @@
             android:fontFamily="@font/latoheavy"
             android:gravity="center"
             android:lineSpacingExtra="-2sp"
-            android:text="Emergency Services"
+            android:text="Dịch vụ khẩn cấp"
             android:textColor="#1D212D"
             android:textSize="26sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -88,7 +88,7 @@
                 android:fontFamily="@font/latoheavy"
                 android:gravity="top"
                 android:lineSpacingExtra="-2sp"
-                android:text="Emergency Call"
+                android:text="Cuộc gọi khẩn cấp"
                 android:textColor="#ffffff"
                 android:textSize="22sp" />
 
@@ -133,7 +133,7 @@
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/latoheavy"
                 android:gravity="top"
-                android:text="Emergency Procedures"
+                android:text="Thủ tục khẩn cấp"
                 android:textColor="#ffffff"
                 android:textSize="22sp" />
 
@@ -179,7 +179,7 @@
                 android:fontFamily="@font/latoheavy"
                 android:gravity="top"
                 android:lineSpacingExtra="-2sp"
-                android:text="Ambulance"
+                android:text="xe cứu thương"
                 android:textColor="#ffffff"
                 android:textSize="22sp" />
 
@@ -201,7 +201,7 @@
             android:background="@drawable/loginsolidrect"
             android:fontFamily="@font/latoheavy"
             android:gravity="center"
-            android:text="Exit"
+            android:text="Thoát"
             android:textColor="#ffffff"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"

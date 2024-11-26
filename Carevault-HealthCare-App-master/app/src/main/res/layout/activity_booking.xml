@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:fontFamily="@font/latoheavy"
-                android:text="Review Summary"
+                android:text="Tóm tắt"
                 android:textColor="#1D212D"
                 android:textSize="25sp"
                 android:textStyle="bold" />
@@ -141,7 +141,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:fontFamily="@font/latobold"
-                        android:text="Patient"
+                        android:text="Kiên nhẫn"
                         android:textColor="#000000"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -174,7 +174,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:fontFamily="@font/latobold"
-                        android:text="Tenure"
+                        android:text="Kinh nghiệm"
                         android:textColor="#000000"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -207,7 +207,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:fontFamily="@font/latobold"
-                        android:text="Rating"
+                        android:text="Đánh giá"
                         android:textColor="#000000"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -243,7 +243,7 @@
                 android:layout_marginEnd="0dp"
                 android:layout_marginBottom="0dp"
                 android:fontFamily="@font/latobold"
-                android:text="Clinic Details"
+                android:text="Chi tiết phòng khám"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -264,7 +264,7 @@
                 android:layout_height="25sp"
                 android:layout_alignParentStart="true"
                 android:fontFamily="@font/latobold"
-                android:text="Appointment Details"
+                android:text="Chi tiết cuộc hẹn"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -354,7 +354,7 @@
                 android:layout_height="25sp"
                 android:layout_alignParentStart="true"
                 android:fontFamily="@font/latobold"
-                android:text="Payment Details"
+                android:text="Chi tiết thanh toán"
                 android:textColor="#1D212D"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -374,7 +374,7 @@
                 android:layout_height="25sp"
                 android:layout_alignParentStart="true"
                 android:fontFamily="@font/latobold"
-                android:text="Consulation"
+                android:text="Lãnh sự quán"
                 android:textColor="#1D212D" />
 
             <TextView
@@ -401,7 +401,7 @@
                 android:layout_height="25sp"
                 android:layout_alignParentLeft="true"
                 android:fontFamily="@font/latobold"
-                android:text="Admin Fee"
+                android:text="Phí quản trị"
                 android:textColor="#1D212D" />
 
             <TextView
@@ -428,7 +428,7 @@
                 android:layout_height="25sp"
                 android:layout_alignParentLeft="true"
                 android:fontFamily="@font/latobold"
-                android:text="Additional Discount"
+                android:text="Giảm giá bổ sung"
                 android:textColor="#1D212D" />
 
             <TextView
@@ -455,7 +455,7 @@
                 android:layout_height="25sp"
                 android:layout_alignParentLeft="true"
                 android:fontFamily="@font/latobold"
-                android:text="Total"
+                android:text="Tổng cộng"
                 android:textColor="#1D212D" />
 
             <TextView
@@ -493,7 +493,7 @@
                 android:layout_height="25sp"
                 android:layout_alignParentLeft="true"
                 android:fontFamily="@font/latobold"
-                android:text="Payment Mode"
+                android:text="Phương thức thanh toán"
                 android:textColor="#1D212D"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -525,7 +525,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/latobold"
-                    android:text="Cash"
+                    android:text="Tiền mặt"
                     android:textColor="#1D212D"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -535,7 +535,7 @@
                 android:layout_height="match_parent"
                 android:layout_alignParentEnd="true"
                 android:fontFamily="@font/latobold"
-                android:text="Change"
+                android:text="Thay đổi"
                 android:textColor="#1D212D"
                 android:textSize="16sp" />
         </RelativeLayout>
@@ -570,7 +570,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="8dp"
                     android:fontFamily="@font/latoregular"
-                    android:text="Give the link of Location"
+                    android:text="Vị trí"
                     android:textColor="#000000"
                     android:textSize="16sp" />
             </LinearLayout>
@@ -588,7 +588,7 @@
             android:background="@drawable/selected_background"
             android:fontFamily="@font/latobold"
             android:gravity="center"
-            android:text="Pay Now"
+            android:text="Thanh toán ngay"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="23sp" />

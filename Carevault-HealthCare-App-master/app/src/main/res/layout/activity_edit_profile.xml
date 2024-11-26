@@ -22,7 +22,7 @@
             android:background="@drawable/selected_background"
             android:fontFamily="@font/latobold"
             android:gravity="center"
-            android:text="Update"
+            android:text="Cập nhật"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="23sp"
@@ -52,7 +52,7 @@
             android:fontFamily="@font/latoheavy"
             android:gravity="top"
             android:lineSpacingExtra="-2sp"
-            android:text="Edit Profile"
+            android:text="Chỉnh sửa"
             android:textColor="#1D212D"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/frame_117122"
@@ -86,17 +86,18 @@
 
         <TextView
             android:id="@+id/my_profile"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
+            android:layout_width="227dp"
+            android:layout_height="57dp"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:layout_marginTop="29dp"
+            android:layout_marginTop="28dp"
             android:fontFamily="@font/latoheavy"
             android:gravity="center"
-            android:text="My Profile"
+            android:text="Thông tin cá nhân"
             android:textColor="#1D212D"
             android:textSize="26sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -122,7 +123,7 @@
                 android:gravity="top"
                 android:inputType="text"
                 android:lineSpacingExtra="-2sp"
-                android:text="Name"
+                android:text="Tên"
                 android:textColor="#1D212D"
                 android:textSize="18sp" />
 
@@ -136,7 +137,7 @@
                 android:gravity="top"
                 android:inputType="number"
                 android:lineSpacingExtra="-2sp"
-                android:text="Mobile Number"
+                android:text="Số điện thoại"
                 android:textColor="#1D212D"
                 android:textSize="18sp" />
 
