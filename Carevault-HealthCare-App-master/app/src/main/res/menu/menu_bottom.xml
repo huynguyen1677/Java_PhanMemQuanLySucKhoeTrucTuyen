@@ -7,7 +7,11 @@
     <item
         android:id="@+id/home2"
         android:icon="@drawable/alarmicon"
+<<<<<<< Updated upstream
         android:title="Nhắc nhở" />
+=======
+        android:title="Báo thức" />
+>>>>>>> Stashed changes
     <item
         android:id="@+id/doc"
         android:icon="@drawable/appointicon"
@@ -15,7 +19,11 @@
     <item
         android:id="@+id/hom3"
         android:icon="@drawable/articleicons"
+<<<<<<< Updated upstream
         android:title="Tin tức" />
+=======
+        android:title="Thể dục" />
+>>>>>>> Stashed changes
     <item
         android:id="@+id/memo"
         android:icon="@drawable/profileicon"

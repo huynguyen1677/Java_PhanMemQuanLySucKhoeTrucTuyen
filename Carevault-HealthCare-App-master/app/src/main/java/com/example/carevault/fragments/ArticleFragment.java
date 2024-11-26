@@ -22,152 +22,63 @@ import com.example.carevault.Articles.TrendArticle;
 import com.example.carevault.R;
 
 public class ArticleFragment extends Fragment {
-    Button covid,diet,fitness;
+    Button covid, diet, fitness;
     TextView trend, seeall;
-    LinearLayout sample1,sample2,sample3,sample4,sample5,sample6,sample7,sample8;
+    LinearLayout[] sampleLayouts; // Array để chứa các sample
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.fragment_article, container, false);
-        trend=view.findViewById(R.id.trend);
-        covid=view.findViewById(R.id.covid);
-        seeall=view.findViewById(R.id.seeall);
-        diet=view.findViewById(R.id.diet);
-        fitness=view.findViewById(R.id.fitness);
-        sample1=view.findViewById(R.id.sample1);
-        sample2=view.findViewById(R.id.sample2);
-        sample3=view.findViewById(R.id.sample3);
-        sample4=view.findViewById(R.id.sample4);
-        sample5=view.findViewById(R.id.sample5);
-        sample6=view.findViewById(R.id.sample6);
-        sample7=view.findViewById(R.id.sample7);
-        sample8=view.findViewById(R.id.sample8);
-        trend.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(requireContext(), TrendArticle.class);
-                startActivity(intent);
-            }
-        });
-        covid.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(requireContext(), Covid.class);
-                startActivity(intent);
-            }
-        });
-        diet.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(requireContext(), Diet.class);
-                startActivity(intent);
-            }
-        });
-        fitness.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(requireContext(), Fitness.class);
-                startActivity(intent);
-            }
-        });
-        seeall.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(requireContext(), RelatedArticles.class);
-                startActivity(intent);
-            }
-        });
-        sample1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String websiteUrl = "https://www.thehindu.com/news/national/telangana/state-records-five-new-covid-19-cases/article67759822.ece";
-                CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
-                CustomTabsIntent customTabsIntent = builder.build();
-                customTabsIntent.launchUrl(requireContext(), Uri.parse(websiteUrl));
-            }
-        });
-        sample2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String websiteUrl = "https://www.thehindu.com/news/national/telangana/state-records-five-new-covid-19-cases/article67759822.ece";
+        View view = inflater.inflate(R.layout.fragment_article, container, false);
 
-                CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
-                CustomTabsIntent customTabsIntent = builder.build();
-                customTabsIntent.launchUrl(requireContext(), Uri.parse(websiteUrl));
-            }
-        });
-        sample3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String websiteUrl = "https://www.thehindu.com/news/national/telangana/state-records-five-new-covid-19-cases/article67759822.ece";
+        // Khởi tạo các view
+        trend = view.findViewById(R.id.trend);
+        covid = view.findViewById(R.id.covid);
+        seeall = view.findViewById(R.id.seeall);
+        diet = view.findViewById(R.id.diet);
+        fitness = view.findViewById(R.id.fitness);
 
-                CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
-                CustomTabsIntent customTabsIntent = builder.build();
-                customTabsIntent.launchUrl(requireContext(), Uri.parse(websiteUrl));
-            }
-        });
-        sample4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String websiteUrl = "https://www.thehindu.com/news/national/telangana/state-records-five-new-covid-19-cases/article67759822.ece";
+        // Khởi tạo mảng sampleLayouts
+        sampleLayouts = new LinearLayout[]{
+                view.findViewById(R.id.sample1),
+                
+        };
 
-                CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
-                CustomTabsIntent customTabsIntent = builder.build();
+        // Thiết lập các listener cho các nút chính
+        trend.setOnClickListener(view1 -> startActivity(new Intent(requireContext(), TrendArticle.class)));
+        covid.setOnClickListener(view1 -> startActivity(new Intent(requireContext(), Covid.class)));
+        diet.setOnClickListener(view1 -> startActivity(new Intent(requireContext(), Diet.class)));
+        fitness.setOnClickListener(view1 -> startActivity(new Intent(requireContext(), Fitness.class)));
+        seeall.setOnClickListener(view1 -> startActivity(new Intent(requireContext(), RelatedArticles.class)));
 
-                customTabsIntent.launchUrl(requireContext(), Uri.parse(websiteUrl));
-            }
-        });
-        sample5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String websiteUrl = "https://www.thehindu.com/news/national/telangana/state-records-five-new-covid-19-cases/article67759822.ece";
+        // Gán URL cho từng sample
+        String[] sampleUrls = new String[]{
+                "https://www.thehindu.com/news/national/telangana/state-records-five-new-covid-19-cases/article67759822.ece",
+                "https://example.com/article2",
+                "https://example.com/article3",
+                "https://example.com/article4",
+                "https://example.com/article5",
+                "https://example.com/article6",
+                "https://example.com/article7",
+                "https://example.com/article8"
+        };
 
-                CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
-                CustomTabsIntent customTabsIntent = builder.build();
+        // Gắn listener cho từng sample
+        for (int i = 0; i < sampleLayouts.length; i++) {
+            setSampleClickListener(sampleLayouts[i], sampleUrls[i]);
+        }
 
-                customTabsIntent.launchUrl(requireContext(), Uri.parse(websiteUrl));
-            }
-        });
-        sample6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Replace "https://example.com" with the actual URL you want to open
-                String websiteUrl = "https://www.thehindu.com/news/national/telangana/state-records-five-new-covid-19-cases/article67759822.ece";
-
-                CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
-                CustomTabsIntent customTabsIntent = builder.build();
-
-                // Ensure you have the necessary checks for null and a browser supporting custom tabs
-                customTabsIntent.launchUrl(requireContext(), Uri.parse(websiteUrl));
-            }
-        });
-        sample7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Replace "https://example.com" with the actual URL you want to open
-                String websiteUrl = "https://www.thehindu.com/news/national/telangana/state-records-five-new-covid-19-cases/article67759822.ece";
-
-                CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
-                CustomTabsIntent customTabsIntent = builder.build();
-
-                // Ensure you have the necessary checks for null and a browser supporting custom tabs
-                customTabsIntent.launchUrl(requireContext(), Uri.parse(websiteUrl));
-            }
-        });
-        sample8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Replace "https://example.com" with the actual URL you want to open
-                String websiteUrl = "https://www.thehindu.com/news/national/telangana/state-records-five-new-covid-19-cases/article67759822.ece";
-
-                CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
-                CustomTabsIntent customTabsIntent = builder.build();
-
-                // Ensure you have the necessary checks for null and a browser supporting custom tabs
-                customTabsIntent.launchUrl(requireContext(), Uri.parse(websiteUrl));
-            }
-        });
         return view;
+    }
+
+    private void setSampleClickListener(LinearLayout sampleLayout, String url) {
+        if (sampleLayout != null) { // Kiểm tra nếu sampleLayout tồn tại
+            sampleLayout.setOnClickListener(view -> {
+                CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+                CustomTabsIntent customTabsIntent = builder.build();
+                customTabsIntent.launchUrl(requireContext(), Uri.parse(url));
+            });
+        }
     }
 }

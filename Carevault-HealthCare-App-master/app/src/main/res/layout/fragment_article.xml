@@ -356,7 +356,7 @@
                             android:fontFamily="@font/latobold"
                             android:text="The 25 Healthiest Fruits You Can Eat, According to a Nutritionist"
                             android:textColor="#ffffff"
-                            android:textSize="15dp"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
 
                         <LinearLayout

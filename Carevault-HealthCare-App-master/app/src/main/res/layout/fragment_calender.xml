@@ -53,8 +53,13 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie"
+<<<<<<< Updated upstream
         app.lottie_autoplay="true"
         app.lottie_loop="true"
+=======
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+>>>>>>> Stashed changes
         android:layout_width="383dp"
         android:layout_height="383dp"
         android:layout_centerInParent="true"

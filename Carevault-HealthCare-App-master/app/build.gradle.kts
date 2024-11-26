@@ -41,11 +41,16 @@ android {
 }
 
 dependencies {
+<<<<<<< Updated upstream
     implementation ("com.google.android.gms:play-services-auth:21.2.0")
     implementation ("com.google.android.gms:play-services-location:21.3.0")
     implementation ("com.google.firebase:firebase-auth-ktx:23.1.0")
     implementation ("com.google.firebase:firebase-firestore-ktx:25.1.1")
     implementation (platform("com.google.firebase:firebase-bom:33.6.0"))
+=======
+    implementation ("com.airbnb.android:lottie:3.4.0")// Kiểm tra phiên bản mới nhất
+
+>>>>>>> Stashed changes
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.android.volley:volley:1.2.1")

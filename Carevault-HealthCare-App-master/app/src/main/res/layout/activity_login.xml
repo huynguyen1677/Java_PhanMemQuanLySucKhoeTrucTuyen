@@ -47,7 +47,7 @@
             android:background="@drawable/selected_background"
             android:fontFamily="@font/latobold"
             android:gravity="center"
-            android:text="Đăng nhập"
+            android:text="Login"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="23sp"
@@ -66,7 +66,11 @@
             android:drawableStart="@drawable/emailicon"
             android:drawablePadding="15dp"
             android:fontFamily="@font/latoregular"
+<<<<<<< Updated upstream
             android:hint="Nhập email"
+=======
+            android:hint="Enter your email"
+>>>>>>> Stashed changes
             android:inputType="textEmailAddress"
             android:paddingStart="25dp"
             android:paddingEnd="25dp"
@@ -174,7 +178,11 @@
             android:drawablePadding="20dp"
             android:ems="10"
             android:fontFamily="@font/latoregular"
+<<<<<<< Updated upstream
             android:hint="Nhập mật khẩu"
+=======
+            android:hint="Enter your password"
+>>>>>>> Stashed changes
             android:inputType="textPassword"
             android:longClickable="false"
             android:paddingStart="25dp"
@@ -198,7 +206,7 @@
             android:fontFamily="@font/latobold"
             android:lineSpacingExtra="3sp"
             android:onClick="forgotpass"
-            android:text="Quên mật khẩu?"
+            android:text="Forgot Password?"
             android:textColor="#1D212D"
             android:textSize="@dimen/text_size_small"
             app:layout_constraintStart_toStartOf="parent"
@@ -234,7 +242,7 @@
             android:fontFamily="@font/latoheavy"
             android:gravity="center_horizontal|center_vertical"
             android:lineSpacingExtra="3sp"
-            android:text="Đăng nhập"
+            android:text="Login"
             android:textColor="#1D212D"
             android:textSize="26sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -248,7 +256,7 @@
             android:layout_marginBottom="484dp"
             android:fontFamily="@font/latoregular"
             android:gravity="center"
-            android:text="Bạn chưa có tài khoản? Đăng ký"
+            android:text="Don't have an account? Sign Up"
             android:textColor="#1D212D"
             android:textSize="@dimen/text_size_medium"
             app:layout_constraintBottom_toBottomOf="parent"
