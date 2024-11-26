@@ -21,17 +21,18 @@
             app:tint="@color/black"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:src="@drawable/backbutton"/>
+
         <TextView
             android:id="@+id/hello"
             android:layout_width="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"
-            android:textColor="@color/black"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:fontFamily="@font/latoheavy"
-            android:text="Add Alarm"
+            android:text="Thêm nhắc nhở"
+            android:textColor="@color/black"
             android:textSize="22sp"
             android:textStyle="bold" />
+
         <ImageButton
             android:id="@+id/menu1"
             android:layout_width="33dp"
@@ -45,7 +46,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="25dp"
-        android:text="Description"
+        android:text="Mô tả"
         android:layout_marginTop="14dp"
         android:textSize="17sp"
         android:layout_marginLeft="5dp"
@@ -64,14 +65,14 @@
         android:layout_below="@id/descr"
         android:textColor="#000000"
         android:layout_marginStart="5dp"
-        android:hint="Type here"
+        android:hint="Nhập tại đây"
         android:padding="12dp"
         android:background="@drawable/logintextareafield"
         android:inputType="text" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="25dp"
-        android:text="Select Date and Time"
+        android:text="Chọn thời gian"
         android:textSize="17sp"
         android:layout_marginLeft="7dp"
         android:layout_marginTop="25dp"
@@ -130,7 +131,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="25dp"
-        android:text="Silent"
+        android:text="Im lặng"
         android:textSize="17sp"
         android:layout_marginLeft="5dp"
         android:textColor="#000000"
@@ -154,7 +155,7 @@
             android:textColor="@color/black"
             android:fontFamily="@font/latoregular"
             android:layout_marginTop="5dp"
-            android:text="Vibrate when alarm Sounds "
+            android:text="Rung khi có âm báo thức "
             android:textSize="18sp"
             android:layout_alignParentEnd="false"
             />
@@ -198,7 +199,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="25dp"
-        android:text="Ringtone"
+        android:text="Nhạc chuông"
         android:textSize="17sp"
         android:layout_marginLeft="5dp"
         android:textColor="#000000"
@@ -220,7 +221,7 @@
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_marginTop="5dp"
-        android:text="Alarm ringtone"
+        android:text="Nhạc chuông báo thức"
         android:textSize="18sp"
         android:fontFamily="@font/latoregular"
         android:textColor="@color/black"
@@ -229,7 +230,7 @@
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_marginTop="5dp"
-        android:text="Default"
+        android:text="Mặc định"
         android:fontFamily="@font/latoregular"
         android:textColor="@color/black"
         android:gravity="end"
@@ -243,7 +244,7 @@
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:layout_below="@id/text3"
-        android:text="Repeat"
+        android:text="Lặp lại"
         android:textSize="17sp"
         android:layout_marginLeft="7dp"
         android:layout_marginTop="25dp"
@@ -428,7 +429,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerInParent="true"
-            android:text="Cancel Alarms"
+            android:text="Hủy nhắc nhở"
             android:textColor="@color/black"
             android:visibility="visible" />
     </RelativeLayout>
