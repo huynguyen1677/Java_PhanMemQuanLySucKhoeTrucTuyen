@@ -99,27 +99,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:autofillHints="email address, email id, email-id, E-mail" />
 
-        <Spinner
-            android:id="@+id/textView14"
-            android:layout_width="355dp"
-            android:layout_height="65dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="450dp"
-            android:background="@drawable/logintextareafield"
-            android:drawableStart="@drawable/emailicon"
-            android:drawablePadding="15dp"
-            android:entries="@array/country_array"
-            android:fontFamily="@font/latoregular"
-            android:paddingStart="25dp"
-            android:paddingEnd="25dp"
-            android:prompt="@string/choose_country"
-            android:textAlignment="textStart"
-            android:textColor="#1D212D"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+
 
         <EditText
             android:id="@+id/textView15"
