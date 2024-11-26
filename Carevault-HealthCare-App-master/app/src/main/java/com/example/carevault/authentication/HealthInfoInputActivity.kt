@@ -13,21 +13,25 @@ class HealthInfoInputActivity : AppCompatActivity() {
 
     private val db = FirebaseFirestore.getInstance()
     private val auth = FirebaseAuth.getInstance()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_healthinfo)
 
+        // Kiểm tra xem người dùng đã đăng nhập chưa
         if (auth.currentUser == null) {
             startActivity(Intent(this, RegisterActivity::class.java))
             finish()
             return
         }
+
         val userId = auth.currentUser?.uid
 
+        // Lấy tham chiếu đến các TextView để nhận thông tin từ người dùng
         val hl_sub = findViewById<TextView>(R.id.textView5)
 
         hl_sub.setOnClickListener {
-
+            // Lấy giá trị từ các TextView
             val Name = findViewById<TextView>(R.id.textView6).text.toString()
             val DOB = findViewById<TextView>(R.id.textView116).text.toString()
             val Gender = findViewById<TextView>(R.id.textView16).text.toString()
@@ -40,42 +44,49 @@ class HealthInfoInputActivity : AppCompatActivity() {
             val disease2 = findViewById<TextView>(R.id.textView21).text.toString()
             val disease3 = findViewById<TextView>(R.id.textView22).text.toString()
 
+            // Kiểm tra xem các trường dữ liệu có trống không
+            if (Name.isEmpty() || DOB.isEmpty() || Gender.isEmpty() || contactperson.isEmpty() ||
+                relationship.isEmpty() || contactnumber.isEmpty() || disease1.isEmpty()) {
+                Toast.makeText(this, "Please fill in all the fields", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             userId?.let {
-                val userMedicalDetailsRef = db.collection("Users").document(userId).collection("Health Information")
+                val userMedicalDetailsRef = db.collection("Users").document(userId).collection("HealthInformation")
 
                 val medicaldata = hashMapOf(
                     "Name" to Name,
                     "Date of Birth" to DOB,
                     "Gender" to Gender,
-
                     "Contact Person" to contactperson,
                     "Relationship" to relationship,
                     "Contact Number" to contactnumber,
-
                     "Disease 1" to disease1,
                     "Disease 2" to disease2,
                     "Disease 3" to disease3
                 )
 
-            userMedicalDetailsRef.document("details").set(medicaldata)
-                .addOnSuccessListener {
-                    Toast.makeText(
-                        applicationContext,
-                        "Medical details saved successfully",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                // Lưu dữ liệu vào Firestore
+                userMedicalDetailsRef.document("details").set(medicaldata)
+                    .addOnSuccessListener {
+                        Toast.makeText(
+                            applicationContext,
+                            "Medical details saved successfully",
+                            Toast.LENGTH_SHORT
+                        ).show()
 
-                    startActivity(Intent(this, LoginActivity::class.java))
-                    finish()
-                }
-                .addOnFailureListener { e ->
-                    Toast.makeText(
-                        applicationContext,
-                        "Error saving medical details: $e",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
+                        // Chuyển đến màn hình đăng nhập sau khi lưu thành công
+                        startActivity(Intent(this, LoginActivity::class.java))
+                        finish()
+                    }
+                    .addOnFailureListener { e ->
+                        Toast.makeText(
+                            applicationContext,
+                            "Error saving medical details: $e",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+            }
         }
     }
-}
 }
