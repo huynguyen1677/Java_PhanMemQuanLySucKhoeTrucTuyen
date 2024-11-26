@@ -48,7 +48,7 @@
             android:background="@drawable/loginsolidrect"
             android:fontFamily="@font/latobold"
             android:gravity="center"
-            android:text="Đăng Ký"
+            android:text="Đăng ký"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="23sp"
@@ -67,7 +67,7 @@
             android:drawableStart="@drawable/personicon"
             android:drawablePadding="15dp"
             android:fontFamily="@font/latoregular"
-            android:hint="Nhập tên của bạn"
+            android:hint="Tên của bạn"
             android:inputType="textPersonName"
             android:paddingStart="25dp"
             android:paddingEnd="25dp"
@@ -87,7 +87,7 @@
             android:drawableStart="@drawable/emailicon"
             android:drawablePadding="15dp"
             android:fontFamily="@font/latoregular"
-            android:hint="Nhập email của bạn"
+            android:hint="Nhập email"
             android:inputType="textEmailAddress"
             android:paddingStart="25dp"
             android:paddingEnd="25dp"
@@ -107,7 +107,7 @@
             android:drawableStart="@drawable/call2icon"
             android:drawablePadding="15dp"
             android:fontFamily="@font/latoregular"
-            android:hint="Số điện thoại"
+            android:hint="Nhập số điện thoại"
             android:inputType="number"
             android:paddingStart="25dp"
             android:paddingEnd="25dp"
@@ -130,7 +130,7 @@
             android:drawablePadding="15dp"
             android:ems="10"
             android:fontFamily="@font/latoregular"
-            android:hint="Nhập mật khẩu của bạn"
+            android:hint="Nhập mật khẩu"
             android:inputType="textPassword"
             android:paddingStart="25dp"
             android:paddingEnd="25dp"
@@ -139,6 +139,7 @@
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
 
         <TextView
             android:id="@+id/headline2"
@@ -153,7 +154,7 @@
             android:fontFamily="@font/latoheavy"
             android:gravity="center_horizontal|center_vertical"
             android:lineSpacingExtra="3sp"
-            android:text="Đăng Ký"
+            android:text="Đăng ký"
             android:textColor="#1D212D"
             android:textSize="26sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -174,6 +175,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:constraint_referenced_ids="textView5,textView6,textView3,headline2,imageButton2" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

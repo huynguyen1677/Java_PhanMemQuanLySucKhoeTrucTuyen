@@ -48,7 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/latobold"
-                android:text="Bài viết phổ biến"
+                android:text="Các bài viết phổ biến"
                 android:textColor="#1D212D"
                 android:textSize="18sp" />
 
@@ -86,7 +86,7 @@
                         android:backgroundTint="#9DCEFF"
                         android:fontFamily="@font/latoregular"
                         android:gravity="center"
-                        android:text="Chế độ ăn uống"
+                        android:text="Ăn kiêng"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
                         android:textSize="15sp" />
@@ -119,7 +119,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/latobold"
-                    android:text="Bài viết thịnh hành"
+                    android:text="Bài viết được quan tâm"
                     android:textColor="#1D212D"
                     android:textSize="18sp" />
 
@@ -179,12 +179,118 @@
                             android:layout_marginHorizontal="10dp"
                             android:layout_marginTop="5dp"
                             android:fontFamily="@font/latoregular"
-                            android:text="So sánh vắc xin COVID-19 AstraZeneca và Sinovac"
+                            android:text="So sánh vắc xin COVID-19 của AstraZeneca và Sinovac"
                             android:textColor="#ffffff"
                             android:textSize="15sp" />
                     </LinearLayout>
 
-                    <!-- Các phần tử tiếp theo sẽ tương tự -->
+                    <LinearLayout
+                        android:id="@+id/sample2"
+                        android:layout_width="195dp"
+                        android:layout_height="230dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/selected_background"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/covid2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="-33dp"
+                            android:src="@drawable/covid2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="-29dp"
+                            android:fontFamily="@font/latobold"
+                            android:text="Covid-19"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/latoregular"
+                            android:text="Nỗi kinh hoàng của làn sóng COVID-19 thứ hai"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sample3"
+                        android:layout_width="195dp"
+                        android:layout_height="230dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/selected_background"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/covid3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="-35dp"
+                            android:src="@drawable/covid3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="-29dp"
+                            android:fontFamily="@font/latobold"
+                            android:text="Covid-19"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/latoregular"
+                            android:text="Comparing the AstraZeneca and Sinovac COVID-19 Vaccines"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sample4"
+                        android:layout_width="195dp"
+                        android:layout_height="230dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/selected_background"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/covid4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="200dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="-33dp"
+                            android:src="@drawable/covid1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="-29dp"
+                            android:fontFamily="@font/latobold"
+                            android:text="Covid-19"
+                            android:textColor="#ffffff" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="6dp"
+                            android:fontFamily="@font/latoregular"
+                            android:text="Comparing the AstraZeneca and Sinovac COVID-19 Vaccines"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+                    </LinearLayout>
                 </LinearLayout>
             </HorizontalScrollView>
 
@@ -199,7 +305,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/latobold"
-                    android:text="Bài viết liên quan"
+                    android:text="Related Articles"
                     android:textColor="#1D212D"
                     android:textSize="18sp" />
 
@@ -210,7 +316,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="10dp"
                     android:fontFamily="@font/latobold"
-                    android:text="Xem tất cả"
+                    android:text="See all"
                     android:textAllCaps="false"
                     android:textColor="#1D212D"
                     android:textSize="16sp" />
@@ -248,7 +354,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="15dp"
                             android:fontFamily="@font/latobold"
-                            android:text="25 loại trái cây tốt nhất cho sức khỏe theo chuyên gia dinh dưỡng"
+                            android:text="The 25 Healthiest Fruits You Can Eat, According to a Nutritionist"
                             android:textColor="#ffffff"
                             android:textSize="15dp"
                             android:textStyle="bold" />
@@ -264,7 +370,7 @@
                                 android:layout_marginStart="2dp"
                                 android:layout_marginTop="4dp"
                                 android:fontFamily="@font/latoregular"
-                                android:text="5 phút đọc"
+                                android:text="5 min read"
                                 android:textColor="#000000"
                                 android:textSize="11sp"
                                 android:textStyle="bold" />
@@ -272,9 +378,151 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <!-- Các phần tử tiếp theo sẽ tương tự -->
-            </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/sample6"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selected_background"
+                    android:orientation="horizontal">
 
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="66dp"
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/relatedcovid2" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/latobold"
+                            android:text="Traditional Herbal Medicine Treatments for COVID-19"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/latoregular"
+                                android:text="6 min read"
+                                android:textColor="#000000"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sample7"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selected_background"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="66dp"
+                        android:layout_marginStart="-15dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/relatedcovid3" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/latobold"
+                            android:text="Beauty Tips For Face: 10 Dos and Don'ts for Naturally Beautiful Skin"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/latoregular"
+                                android:text="4 min read"
+                                android:textColor="#000000"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sample8"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selected_background"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="66dp"
+                        android:layout_marginLeft="-15dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/relatedcovid1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/latobold"
+                            android:text="Traditional Herbal Medicine Treatments for COVID-19"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2dp"
+                                android:text="5 min read"
+                                android:textColor="#000000"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
         </RelativeLayout>
     </androidx.core.widget.NestedScrollView>
 </RelativeLayout>

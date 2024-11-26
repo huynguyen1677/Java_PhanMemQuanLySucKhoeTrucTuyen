@@ -28,7 +28,7 @@
             android:layout_marginStart="50dp"
             android:fontFamily="@font/latoheavy"
             android:gravity="center_horizontal"
-            android:text="Hồ sơ"
+            android:text="Hồ sơ của tôi"
             android:textColor="#1D212D"
             android:textSize="22sp" />
     </RelativeLayout>
@@ -76,7 +76,7 @@
                     android:fontFamily="@font/latoheavy"
                     android:gravity="top"
                     android:lineSpacingExtra="-2sp"
-                    android:text="Tên"
+                    android:text="Name"
                     android:textColor="#1D212D"
                     android:textSize="18sp" />
 
@@ -153,7 +153,7 @@
                     android:fontFamily="@font/latoheavy"
                     android:gravity="top"
                     android:lineSpacingExtra="-2sp"
-                    android:text="Trợ giúp và hỗ trợ"
+                    android:text="Trợ giúp và Hỗ trợ"
                     android:textColor="#ffffff"
                     android:textSize="18sp" />
 
@@ -174,7 +174,7 @@
                     android:fontFamily="@font/latoheavy"
                     android:gravity="top"
                     android:lineSpacingExtra="-2sp"
-                    android:text="Đánh giá"
+                    android:text="Phản hồi"
                     android:textColor="#ffffff"
                     android:textSize="18sp" />
 

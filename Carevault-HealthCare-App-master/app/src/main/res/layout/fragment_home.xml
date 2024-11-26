@@ -27,7 +27,7 @@
             android:layout_marginStart="50dp"
             android:fontFamily="@font/latoheavy"
             android:gravity="center_vertical"
-            android:text="CareVault"
+            android:text="YOUR HEALTH"
             android:textColor="#1D212D"
             android:textSize="22sp" />
 
@@ -41,7 +41,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="59dp"
             android:layout_toStartOf="@+id/pagete"
-            android:contentDescription="thông báo"
+            android:contentDescription="notify"
             android:src="@drawable/locationpin" />
 
         <TextView
@@ -53,7 +53,7 @@
             android:layout_marginTop="6dp"
             android:layout_marginEnd="5dp"
             android:fontFamily="@font/latoheavy"
-            android:text="Nagpur"
+            android:text="Vị trí"
             android:textColor="#1D212D"
             android:textSize="15sp" />
 
@@ -83,7 +83,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:iconifiedByDefault="false"
-                app:queryHint="Tìm bác sĩ, thuốc, bài viết..." />
+                app:queryHint="Tìm kiếm" />
 
             <LinearLayout
                 android:id="@+id/mainbuttons"
@@ -105,7 +105,7 @@
                         android:layout_height="65dp"
                         android:layout_centerVertical="true"
                         android:background="@drawable/homepageicons"
-                        android:contentDescription="thông báo"
+                        android:contentDescription="notify"
                         android:src="@drawable/stethoscope" />
 
                     <TextView
@@ -130,7 +130,7 @@
                         android:layout_height="65dp"
                         android:layout_centerVertical="true"
                         android:background="@drawable/homepageicons"
-                        android:contentDescription="thông báo"
+                        android:contentDescription="notify"
                         android:src="@drawable/outline_health_and_safety_24" />
 
                     <TextView
@@ -155,7 +155,7 @@
                         android:layout_height="65dp"
                         android:layout_centerVertical="true"
                         android:background="@drawable/homepageicons"
-                        android:contentDescription="thông báo"
+                        android:contentDescription="notify"
                         android:src="@drawable/ambulancecar" />
 
                     <TextView
@@ -164,7 +164,7 @@
                         android:layout_below="@+id/hospital"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="23dp"
-                        android:text="Xe cấp cứu"
+                        android:text="Xe cứu thương"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
                 </RelativeLayout>
@@ -182,7 +182,7 @@
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:background="@drawable/homepageicons"
-                        android:contentDescription="thông báo"
+                        android:contentDescription="notify"
                         android:src="@drawable/redemergency" />
 
                     <TextView
@@ -274,7 +274,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Nha sĩ"
+                            android:text="Dentist"
                             android:textColor="#ffffff"
                             android:textSize="14sp" />
 
@@ -290,7 +290,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="2dp"
                             android:layout_marginBottom="0dp"
-                            android:text="Bệnh viện Hoàng Gia"
+                            android:text="Royal Hospital"
                             android:textColor="#ffffff"
                             android:textSize="14sp" />
                     </LinearLayout>
@@ -319,7 +319,7 @@
                         android:layout_marginTop="12dp"
                         android:layout_marginEnd="5dp"
                         android:fontFamily="@font/latobold"
-                        android:text="10 tháng 9, 2023"
+                        android:text="Sept 10, 2023"
                         android:textColor="@color/white"
                         android:textSize="12sp" />
 
@@ -348,7 +348,7 @@
                         android:layout_marginTop="12dp"
                         android:layout_marginEnd="5dp"
                         android:fontFamily="@font/latobold"
-                        android:text="05:00 chiều"
+                        android:text="05:00 pm"
                         android:textColor="@color/white"
                         android:textSize="12sp" />
 
@@ -368,7 +368,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Chuyên khoa bác sĩ"
+                    android:text="Bác sĩ chuyên khoa"
                     android:textColor="#1D212D"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -463,7 +463,7 @@
                         android:layout_marginStart="10dp"
                         android:background="@drawable/tab_background"
                         android:gravity="center"
-                        android:text="Chuyên khoa tổng quát"
+                        android:text="Tổng quát"
                         android:textColor="#94a9fd"
                         android:textStyle="bold" />
 
@@ -489,7 +489,9 @@
                 </LinearLayout>
             </HorizontalScrollView>
 
+
         </RelativeLayout>
     </androidx.core.widget.NestedScrollView>
 
 </RelativeLayout>
+

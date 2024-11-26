@@ -7,9 +7,12 @@ import android.text.method.PasswordTransformationMethod
 import android.util.Patterns
 import android.view.MotionEvent
 import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.ImageButton
+import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -24,7 +27,6 @@ class RegisterActivity : AppCompatActivity() {
 
     private val auth = FirebaseAuth.getInstance()
     private val db = FirebaseFirestore.getInstance()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
@@ -40,6 +42,30 @@ class RegisterActivity : AppCompatActivity() {
                 }
             }
             false
+        }
+
+        val spinner: Spinner = findViewById(R.id.textView14)
+        val adapter = ArrayAdapter.createFromResource(
+            this,
+            R.array.country_array,
+            android.R.layout.simple_spinner_item
+        )
+
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinner.adapter = adapter
+        spinner.setSelection(0)
+
+        spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                parentView: AdapterView<*>?,
+                selectedItemView: View?,
+                position: Int,
+                id: Long
+            ) {
+            }
+
+            override fun onNothingSelected(parentView: AdapterView<*>?) {
+            }
         }
 
         val backButton: ImageButton = findViewById(R.id.imageButton2)
@@ -61,6 +87,7 @@ class RegisterActivity : AppCompatActivity() {
                             val user = auth.currentUser
                             val name = findViewById<EditText>(R.id.textView6).text.toString()
                             val mobileNumber = findViewById<EditText>(R.id.textView15).text.toString()
+                            val country = spinner.selectedItem.toString()
 
                             val userId = Objects.requireNonNull<FirebaseUser>(auth.currentUser).uid
 
@@ -68,6 +95,7 @@ class RegisterActivity : AppCompatActivity() {
                                 "Name" to name,
                                 "Email" to email,
                                 "MobileNumber" to mobileNumber,
+                                "Country" to country,
                                 "UserId" to userId
                             )
 
@@ -99,7 +127,6 @@ class RegisterActivity : AppCompatActivity() {
             }
         }
     }
-
     private fun validateInputs(): Boolean {
         val nameEditText: EditText = findViewById(R.id.textView6)
         val emailEditText: EditText = findViewById(R.id.textView11)

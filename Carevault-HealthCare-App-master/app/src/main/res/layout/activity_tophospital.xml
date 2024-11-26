@@ -30,6 +30,7 @@
                 android:src="@drawable/baseline_arrow_back_ios_24"
                 app:tint="#000000" />
 
+
             <TextView
                 android:id="@+id/pagetitle"
                 android:layout_width="wrap_content"
@@ -77,9 +78,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
                             android:layout_marginTop="15dp"
-                            android:text="Dr. Marcus Horizon"
+                            android:text="Dr.Marcus Horizon"
                             android:textColor="@color/black"
-                            android:textSize="19sp"
+                            android:textSize="19dp"
                             android:textStyle="bold" />
 
                         <LinearLayout
@@ -91,17 +92,18 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="20dp"
-                                android:text="Ngày 12 tháng 6, 2021."
+                                android:text="June 12,2021 ."
                                 android:textColor="#151921"
-                                android:textSize="11sp" />
+                                android:textSize="11dp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="2dp"
-                                android:text="5 phút đọc"
+
+                                android:text="5 min read"
                                 android:textColor="#5F48E6"
-                                android:textSize="11sp"
+                                android:textSize="11dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </LinearLayout>
@@ -124,6 +126,7 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/verticalscroll"
                         android:orientation="vertical">
 
                         <TextView
@@ -131,9 +134,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="15dp"
-                            android:text="Dr. Maria Elena"
+                            android:text="Dr.Maria Elena"
                             android:textColor="#101623"
-                            android:textSize="19sp"
+                            android:textSize="19dp"
                             android:textStyle="bold" />
 
                         <LinearLayout
@@ -145,17 +148,17 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="20dp"
-                                android:text="Ngày 12 tháng 6, 2021."
+                                android:text="June 12,2021 ."
                                 android:textColor="#151921"
-                                android:textSize="11sp" />
+                                android:textSize="11dp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="2dp"
-                                android:text="6 phút đọc"
+                                android:text="6 min read"
                                 android:textColor="#5F48E6"
-                                android:textSize="11sp"
+                                android:textSize="11dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </LinearLayout>
@@ -178,6 +181,8 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/verticalscroll"
+
                         android:orientation="vertical">
 
                         <TextView
@@ -185,9 +190,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="15dp"
-                            android:text="Dr. Stefi Jessi"
+                            android:text="Dr.Stefi Jessi"
                             android:textColor="#101623"
-                            android:textSize="19sp"
+                            android:textSize="19dp"
                             android:textStyle="bold" />
 
                         <LinearLayout
@@ -199,17 +204,17 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="20dp"
-                                android:text="Ngày 12 tháng 6, 2021."
+                                android:text="June 12,2021 ."
                                 android:textColor="#151921"
-                                android:textSize="11sp" />
+                                android:textSize="11dp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="2dp"
-                                android:text="4 phút đọc"
+                                android:text="4 min read"
                                 android:textColor="#5F48E6"
-                                android:textSize="11sp"
+                                android:textSize="11dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </LinearLayout>
@@ -232,6 +237,7 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/verticalscroll"
                         android:orientation="vertical">
 
                         <TextView
@@ -239,9 +245,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="15dp"
-                            android:text="Dr. Gerty Cori"
+                            android:text="Dr.Gerty Cori"
                             android:textColor="#101623"
-                            android:textSize="19sp"
+                            android:textSize="19dp"
                             android:textStyle="bold" />
 
                         <LinearLayout
@@ -253,17 +259,17 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="20dp"
-                                android:text="Ngày 12 tháng 6, 2021."
+                                android:text="June 12,2021 ."
                                 android:textColor="#151921"
-                                android:textSize="11sp" />
+                                android:textSize="11dp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="2dp"
-                                android:text="5 phút đọc"
+                                android:text="5 min read"
                                 android:textColor="#5F48E6"
-                                android:textSize="11sp"
+                                android:textSize="11dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </LinearLayout>
@@ -286,6 +292,7 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/verticalscroll"
                         android:orientation="vertical">
 
                         <TextView
@@ -293,9 +300,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="15dp"
-                            android:text="Dr. Diandra"
+                            android:text="Dr.Diandra"
                             android:textColor="#101623"
-                            android:textSize="19sp"
+                            android:textSize="19dp"
                             android:textStyle="bold" />
 
                         <LinearLayout
@@ -307,17 +314,17 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="20dp"
-                                android:text="Ngày 12 tháng 6, 2021."
+                                android:text="June 12,2021 ."
                                 android:textColor="#151921"
-                                android:textSize="11sp" />
+                                android:textSize="11dp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="2dp"
-                                android:text="5 phút đọc"
+                                android:text="5 min read"
                                 android:textColor="#5F48E6"
-                                android:textSize="11sp"
+                                android:textSize="11dp"
                                 android:textStyle="bold" />
                         </LinearLayout>
                     </LinearLayout>
@@ -328,3 +335,7 @@
 
     </RelativeLayout>
 </ScrollView>
+
+
+
+

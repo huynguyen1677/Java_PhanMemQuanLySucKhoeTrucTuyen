@@ -33,7 +33,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/latobold"
-                android:text="Bác sĩ Willium Smith"
+                android:text="Dr Willium Smith"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -50,7 +50,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:fontFamily="@font/latobold"
-                    android:text="Nha sĩ  |"
+                    android:text="Dentist  |"
                     android:textColor="@color/black"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -63,7 +63,7 @@
                     android:fontFamily="@font/latobold"
                     android:gravity="center"
                     android:padding="3dp"
-                    android:text="Hoàn thành"
+                    android:text="Completed"
                     android:textColor="#000000"
                     android:textSize="15sp"
                     android:textStyle="bold" />
@@ -82,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:fontFamily="@font/latobold"
-                    android:text="29 tháng 1, 2024  |"
+                    android:text="Jan 29, 2024  |"
                     android:textColor="@color/black"
                     android:textSize="15sp"
                     android:textStyle="bold" />

@@ -28,7 +28,7 @@
         android:fontFamily="@font/latobold"
         android:gravity="center"
         android:padding="5sp"
-        android:text="Có vẻ như không có chỗ trống vào ngày bạn đã chọn. Vui lòng chọn ngày khác."
+        android:text="Looks like Slot is not available for the date you selected. Please choose another slot."
         android:textColor="@color/black"
         android:textSize="18sp" />
 
@@ -41,6 +41,6 @@
         android:layout_marginTop="15dp"
         android:layout_marginBottom="5dp"
         android:background="@drawable/selected_background"
-        android:text="Đồng ý"
+        android:text="Ok"
         android:textSize="14sp" />
 </RelativeLayout>

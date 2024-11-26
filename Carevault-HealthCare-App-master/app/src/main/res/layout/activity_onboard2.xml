@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/latoheavy"
             android:gravity="start"
-            android:text="Tìm nhiều bác sĩ chuyên khoa \ntại một nơi"
+            android:text="Find a lot of specialist \ndoctors in one place"
             android:textColor="#1D212D"
             android:textSize="@dimen/text_size_large"
             app:layout_constraintBottom_toBottomOf="@+id/imageView2"

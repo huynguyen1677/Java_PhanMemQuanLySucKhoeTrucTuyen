@@ -24,7 +24,7 @@
         android:layout_below="@id/tick"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:text="Thanh toán thành công"
+        android:text="Payment success"
         android:textColor="#1D212D"
         android:textSize="25sp"
         android:textStyle="bold" />
@@ -39,7 +39,7 @@
         android:fontFamily="@font/latobold"
         android:gravity="center"
         android:padding="5sp"
-        android:text="Thanh toán của bạn đã thành công, bạn có thể bắt đầu buổi tư vấn với bác sĩ đáng tin cậy."
+        android:text="Your payment has been succesful, you can have a consultation session with your trusted doctor"
         android:textColor="#000000"
         android:textSize="18sp" />
 
@@ -51,6 +51,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:background="@drawable/roundedcorner"
-        android:text="Hoàn tất" />
+        android:text="Done" />
 
 </RelativeLayout>

@@ -32,6 +32,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="383dp" />
+
         <TextView
             android:id="@+id/textView5"
             android:layout_width="355dp"
@@ -81,7 +88,7 @@
             android:drawableStart="@drawable/emailicon"
             android:drawablePadding="15dp"
             android:fontFamily="@font/latoregular"
-            android:hint="Nhập email của bạn"
+            android:hint="Nhập email"
             android:inputType="textEmailAddress"
             android:paddingStart="25dp"
             android:paddingEnd="25dp"
@@ -91,6 +98,28 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:autofillHints="email address, email id, email-id, E-mail" />
+
+        <Spinner
+            android:id="@+id/textView14"
+            android:layout_width="355dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="450dp"
+            android:background="@drawable/logintextareafield"
+            android:drawableStart="@drawable/emailicon"
+            android:drawablePadding="15dp"
+            android:entries="@array/country_array"
+            android:fontFamily="@font/latoregular"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:prompt="@string/choose_country"
+            android:textAlignment="textStart"
+            android:textColor="#1D212D"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/textView15"
@@ -102,7 +131,7 @@
             android:drawableStart="@drawable/call2icon"
             android:drawablePadding="15dp"
             android:fontFamily="@font/latoregular"
-            android:hint="Số điện thoại di động"
+            android:hint="Nhập số điện thoại"
             android:inputType="number"
             android:paddingStart="25dp"
             android:paddingEnd="25dp"
@@ -149,7 +178,7 @@
             android:layout_marginTop="550dp"
             android:fontFamily="@font/latobold"
             android:lineSpacingExtra="3sp"
-            android:text="Tôi đồng ý với Điều khoản dịch vụ và Chính sách bảo mật của CareVault"
+            android:text="Tôi đồng ý với Điều khoản dịch vụ của CareVault \n và Chính sách quyền riêng tư"
             android:textColor="#1D212D"
             android:textSize="15sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -183,6 +212,7 @@
             android:background="@drawable/backbutton"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
 
         <androidx.constraintlayout.widget.Group
             android:id="@+id/group"

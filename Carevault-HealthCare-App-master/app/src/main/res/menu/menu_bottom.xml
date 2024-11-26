@@ -3,21 +3,21 @@
     <item
         android:id="@+id/home1"
         android:icon="@drawable/homeicon"
-        android:title="Home" />
+        android:title="Trang chủ" />
     <item
         android:id="@+id/home2"
         android:icon="@drawable/alarmicon"
-        android:title="Alarms" />
+        android:title="Nhắc nhở" />
     <item
         android:id="@+id/doc"
         android:icon="@drawable/appointicon"
-        android:title="Appointment" />
+        android:title="Lịch hẹn" />
     <item
         android:id="@+id/hom3"
         android:icon="@drawable/articleicons"
-        android:title="Articles" />
+        android:title="Tin tức" />
     <item
         android:id="@+id/memo"
         android:icon="@drawable/profileicon"
-        android:title="Profile" />
+        android:title="Tôi" />
 </menu>

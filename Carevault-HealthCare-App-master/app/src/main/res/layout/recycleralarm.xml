@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/latobold"
-            android:text="Thời gian"
+            android:text="Time"
             android:textColor="@color/white"
             android:textSize="18sp" />
 
@@ -35,8 +35,8 @@
             android:checked="true"
             android:ellipsize="end"
             android:switchMinWidth="56dp"
-            android:textOff="TẮT"
-            android:textOn="BẬT" />
+            android:textOff="OFF"
+            android:textOn="ON" />
     </LinearLayout>
 
     <TextView
@@ -50,7 +50,7 @@
         android:fontFamily="@font/latobold"
         android:gravity="start"
         android:maxLines="4"
-        android:text="Ngày"
+        android:text="Date"
         android:textColor="@color/white"
         android:textSize="16sp" />
 
@@ -64,7 +64,7 @@
         android:layout_marginEnd="5dp"
         android:fontFamily="@font/latobold"
         android:gravity="start"
-        android:text="Nội dung"
+        android:text="Content"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold" />

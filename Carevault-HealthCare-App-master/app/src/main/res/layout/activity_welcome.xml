@@ -83,7 +83,7 @@
             android:fontFamily="@font/latoheavy"
             android:gravity="center_horizontal|center_vertical"
             android:lineSpacingExtra="3sp"
-            android:text="Hãy bắt đầu nào!"
+            android:text="Chào mừng bạn!"
             android:textColor="#ffffff"
             android:textSize="28sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -135,7 +135,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/latoheavy"
             android:gravity="center"
-            android:text="Đăng nhập để tận hưởng các tính năng mà chúng tôi đã \nchuẩn bị, và giữ gìn sức khỏe!"
+            android:text="Đăng nhập để tận hưởng các tính năng mà chúng tôi đã cung cấp!"
             android:textColor="#eff1ff"
             android:textSize="22sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -143,5 +143,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.48000002" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

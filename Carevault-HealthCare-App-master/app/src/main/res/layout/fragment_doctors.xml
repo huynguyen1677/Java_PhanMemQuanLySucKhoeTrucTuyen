@@ -44,12 +44,12 @@
             <com.google.android.material.tabs.TabItem
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Đã hoàn thành" />
+                android:text="Hoàn thành" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Đã hủy" />
+                android:text="Bị hủy bỏ" />
         </com.google.android.material.tabs.TabLayout>
     </RelativeLayout>
 

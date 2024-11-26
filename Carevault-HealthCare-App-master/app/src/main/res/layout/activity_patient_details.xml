@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:fontFamily="@font/latoheavy"
-            android:text="Chi tiết bệnh nhân"
+            android:text="Patient Detail"
             android:textColor="#1D212D"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -52,15 +52,15 @@
             android:layout_height="wrap_content"
             android:checked="true"
             android:switchMinWidth="56dp"
-            android:textOff="TẮT"
-            android:textOn="BẬT" />
+            android:textOff="OFF"
+            android:textOn="ON" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_marginLeft="10dp"
             android:fontFamily="@font/latobold"
-            android:text="Cho bản thân"
+            android:text="For Self"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -82,7 +82,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:fontFamily="@font/latobold"
-            android:text="Họ và tên"
+            android:text="Full Name"
             android:textColor="#000000"
             android:textSize="16sp" />
 
@@ -93,10 +93,12 @@
             android:layout_margin="3dp"
             android:backgroundTint="@android:color/transparent"
             android:fontFamily="@font/latoregular"
-            android:hint="Nhập tên"
+            android:hint="Enter Name"
             android:padding="10dp"
             android:textColor="#000000"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -114,7 +116,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:fontFamily="@font/latobold"
-            android:text="Tuổi của bạn"
+            android:inputType="number"
+            android:text="Your Age"
             android:textColor="#000000"
             android:textSize="16sp" />
 
@@ -128,7 +131,9 @@
             android:hint="20"
             android:padding="10dp"
             android:textColor="#000000"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -146,7 +151,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:fontFamily="@font/latobold"
-            android:text="Giới tính"
+            android:text="Gender"
             android:textColor="#000000"
             android:textSize="16sp" />
 
@@ -176,7 +181,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:fontFamily="@font/latobold"
-            android:text="Vấn đề của bạn"
+            android:text="Your Problem"
             android:textColor="#000000"
             android:textSize="16sp" />
 
@@ -187,10 +192,11 @@
             android:layout_margin="3dp"
             android:backgroundTint="@android:color/transparent"
             android:fontFamily="@font/latoregular"
-            android:hint="Mô tả vấn đề"
+            android:hint="Describe the problem"
             android:padding="10dp"
             android:textColor="#000000"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -216,7 +222,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/loader"
         android:background="@drawable/selected_background"
-        android:fontFamily="@font/latobold"
-        android:text="Tiếp theo"
-        android:textColor="#FFFFFF" />
+        android:fontFamily="@font/latoheavy"
+        android:text="Next" />
 </RelativeLayout>
