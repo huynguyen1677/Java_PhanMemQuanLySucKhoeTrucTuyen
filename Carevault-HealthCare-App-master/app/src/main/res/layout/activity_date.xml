@@ -15,7 +15,7 @@
         android:layout_marginTop="10dp"
         android:fontFamily="@font/latobold"
         android:gravity="center"
-        android:text="Book Appointement"
+        android:text="Đặt lịch hẹn"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -131,7 +131,7 @@
             android:layout_marginTop="18dp"
             android:fontFamily="@font/latobold"
             android:padding="1dp"
-            android:text="Select Day"
+            android:text="Chọn ngày"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -163,7 +163,7 @@
         android:layout_marginTop="15dp"
         android:fontFamily="@font/latobold"
         android:padding="1dp"
-        android:text="Available time slots for:"
+        android:text="Các khoảng thời gian có sẵn:"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold" />
