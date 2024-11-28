@@ -34,6 +34,7 @@ class HealthRecordActivity : AppCompatActivity() {
         val genderTextView: TextView = findViewById(R.id.textViewGender)
         val disease1TextView: TextView = findViewById(R.id.textViewDisease1)
         val disease2TextView: TextView = findViewById(R.id.textViewDisease2)
+        val disease3TextView: TextView = findViewById(R.id.textViewDisease3)
 
         // Truy vấn dữ liệu từ Firestore
         val userMedicalDetailsRef = db.collection("Users").document(userId).collection("HealthInformation")

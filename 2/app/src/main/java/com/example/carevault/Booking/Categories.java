@@ -25,7 +25,7 @@ public class Categories extends AppCompatActivity {
     ImageButton back;
     private GridView mGridView;
     private MyAdapter mAdapter;
-    private final String[] mNames = {"General", "Dentist", "Otology", "Heart", "Intestine", "Eye", "Pediatric", "Herbal", "Cancer", "Diabetes", "Asthma", "Ortho"};
+    private final String[] mNames = {"Chung", "Nha khoa", "Tai mũi họng", "Tim mạch", "Tiêu hóa", "Mắt", "Nhi khoa", "Thảo dược", "Ung thư", "Tiểu đường", "Hen suyễn", "Chấn thương chỉnh hình"};
     private final int[] mImages = {R.drawable.general, R.drawable.dentist, R.drawable.otology, R.drawable.hearticon, R.drawable.intestine, R.drawable.optho, R.drawable.pediatric, R.drawable.herbal, R.drawable.cancericon, R.drawable.diabetesicon, R.drawable.lungicon, R.drawable.orthoicon}; // Example images
 
     @Override
@@ -39,11 +39,10 @@ public class Categories extends AppCompatActivity {
         TextView text = findViewById(R.id.text);
         mGridView.setOnItemClickListener((parent, view, position, id) -> {
             String selectedSeat = mNames[position];
-            Toast.makeText(Categories.this, "=" + selectedSeat, Toast.LENGTH_SHORT).show();
+            Toast.makeText(Categories.this, "Chuyên khoa: " + selectedSeat, Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(Categories.this, DoctorsActivity.class);
             intent.putExtra("category", selectedSeat);
             startActivity(intent);
-
         });
         back.setOnClickListener(view -> onBackPressed());
     }
@@ -52,7 +51,7 @@ public class Categories extends AppCompatActivity {
         ModelDoc modelDoc = new ModelDoc();
         modelDoc.setName("Matt Henry");
         modelDoc.setDate("2024-2-25");
-        modelDoc.setClinic("Asan Medical Center (AMC)");
+        modelDoc.setClinic("Bệnh viện Asan (AMC)");
         modelDoc.setCategory(category);
         HashMap<String, Boolean> timeSlotsMap = new HashMap<>();
 
@@ -69,8 +68,9 @@ public class Categories extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if (task.isSuccessful()) {
+                    // Thành công
                 } else {
-                    Toast.makeText(Categories.this, "Failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Categories.this, "Thêm thông tin thất bại", Toast.LENGTH_SHORT).show();
                 }
             }
         });

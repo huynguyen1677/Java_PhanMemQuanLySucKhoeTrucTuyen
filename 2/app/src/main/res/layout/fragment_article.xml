@@ -13,7 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
         android:background="#e9edff"
         android:padding="12dp">
 
@@ -22,7 +21,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="50dp"
             android:fontFamily="@font/latoheavy"
             android:gravity="center_horizontal"
@@ -30,7 +28,6 @@
             android:textColor="#1D212D"
             android:textSize="22sp" />
     </RelativeLayout>
-
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -305,7 +302,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/latobold"
-                    android:text="Related Articles"
+                    android:text="Bài viết khác"
                     android:textColor="#1D212D"
                     android:textSize="18sp" />
 
@@ -316,7 +313,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="10dp"
                     android:fontFamily="@font/latobold"
-                    android:text="See all"
+                    android:text="Xem tất cả"
                     android:textAllCaps="false"
                     android:textColor="#1D212D"
                     android:textSize="16sp" />

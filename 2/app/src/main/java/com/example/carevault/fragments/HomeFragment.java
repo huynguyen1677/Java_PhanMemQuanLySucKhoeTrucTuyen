@@ -19,15 +19,15 @@ import com.example.carevault.emergency.EmergencyActivityCopy;
 
 public class HomeFragment extends Fragment {
     private GridView gridView;
-    private String[] itemNames = {"General", "Dentist", "Otology", "Heart", "Intestine", "Eye", "Pediatric", "Herbal"};
-    private int[] itemIcons = {R.drawable.general, R.drawable.dentist, R.drawable.otology,R.drawable.hearticon, R.drawable.intestine, R.drawable.optho, R.drawable.pediatric, R.drawable.herbal};
+    private String[] itemNames = {"Chung", "Nha khoa", "Tai mũi họng", "Tim mạch", "Tiêu hóa", "Mắt", "Nhi khoa", "Thảo dược"};
+    private int[] itemIcons = {R.drawable.general, R.drawable.dentist, R.drawable.otology, R.drawable.hearticon, R.drawable.intestine, R.drawable.optho, R.drawable.pediatric, R.drawable.herbal};
     ImageButton doc, hospitals, ambulance, emergency;
     TextView see1, see2, see3;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view= inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
 
         doc = view.findViewById(R.id.Doctor);
         hospitals = view.findViewById(R.id.article);
@@ -62,6 +62,7 @@ public class HomeFragment extends Fragment {
             startActivity(intent);
         });
 
+        // Chuyển tiếng Việt cho các mục xem
 //        see1.setOnClickListener(v -> {
 //            Intent intent = new Intent(getContext(), DoctorsFragment.class);
 //            startActivity(intent);

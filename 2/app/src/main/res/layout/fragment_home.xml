@@ -247,7 +247,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
-                    android:background="@drawable/circle_home" />
+                    android:background="@drawable/dentist" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -261,7 +261,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/latobold"
-                        android:text="Dr.Marcus Horizon"
+                        android:text="BÁC SĨ CHÂU"
                         android:textColor="@color/white"
                         android:textSize="19sp" />
 
@@ -274,7 +274,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Dentist"
+                            android:text="Nha khoa"
                             android:textColor="#ffffff"
                             android:textSize="14sp" />
 
@@ -290,7 +290,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="2dp"
                             android:layout_marginBottom="0dp"
-                            android:text="Royal Hospital"
+                            android:text="Bệnh viện Y dược Tp.HCM"
                             android:textColor="#ffffff"
                             android:textSize="14sp" />
                     </LinearLayout>

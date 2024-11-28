@@ -74,17 +74,14 @@ public class Notification extends BroadcastReceiver {
                 //builder.setContentIntent(contentIntent);
 
                 NotificationManager manager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-
-                    Toast.makeText(context, "hello14", Toast.LENGTH_SHORT).show();
-                    String channelId = "Your_channel_id";
-                    NotificationChannel channel = new NotificationChannel(
-                            channelId,
-                            "Channel human readable title",
-                            NotificationManager.IMPORTANCE_HIGH);
-                    manager.createNotificationChannel(channel);
-                    builder.setChannelId(channelId);
-                }
+                Toast.makeText(context, "hello14", Toast.LENGTH_SHORT).show();
+                String channelId = "Your_channel_id";
+                NotificationChannel channel = new NotificationChannel(
+                        channelId,
+                        "Channel human readable title",
+                        NotificationManager.IMPORTANCE_HIGH);
+                manager.createNotificationChannel(channel);
+                builder.setChannelId(channelId);
                 manager.notify(0, builder.build());
                 // Save the start time
 //                Toast.makeText(context, "" + music, Toast.LENGTH_SHORT).show();
@@ -145,17 +142,14 @@ public class Notification extends BroadcastReceiver {
 
                     NotificationManager manager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
                     //Toast.makeText(context, "hello4", Toast.LENGTH_SHORT).show();
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-
-                        Toast.makeText(context, "hello14", Toast.LENGTH_SHORT).show();
-                        String channelId = "Your_channel_id";
-                        NotificationChannel channel = new NotificationChannel(
-                                channelId,
-                                "Channel human readable title",
-                                NotificationManager.IMPORTANCE_HIGH);
-                        manager.createNotificationChannel(channel);
-                        builder.setChannelId(channelId);
-                    }
+                    Toast.makeText(context, "hello14", Toast.LENGTH_SHORT).show();
+                    String channelId = "Your_channel_id";
+                    NotificationChannel channel = new NotificationChannel(
+                            channelId,
+                            "Channel human readable title",
+                            NotificationManager.IMPORTANCE_HIGH);
+                    manager.createNotificationChannel(channel);
+                    builder.setChannelId(channelId);
                     manager.notify(0, builder.build());
                     //Toast.makeText(context, "hello14", Toast.LENGTH_SHORT).show();
 //                    NotificationCompat.Builder builder = new NotificationCompat.Builder(context, channelID)
@@ -193,19 +187,13 @@ public class Notification extends BroadcastReceiver {
     }
     String datePick(){
         LocalDate currentDate = null;
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-            currentDate = LocalDate.now();
-        }
+        currentDate = LocalDate.now();
         DateTimeFormatter formatter = null;
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-            formatter = DateTimeFormatter.ofPattern("dd MMMM yyyy", Locale.ENGLISH);
-        }
+        formatter = DateTimeFormatter.ofPattern("dd MMMM yyyy", Locale.ENGLISH);
 
         // Format the date to a string
         String formattedDate = null;
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-            formattedDate = currentDate.format(formatter);
-        }
+        formattedDate = currentDate.format(formatter);
 
         return formattedDate;
     }

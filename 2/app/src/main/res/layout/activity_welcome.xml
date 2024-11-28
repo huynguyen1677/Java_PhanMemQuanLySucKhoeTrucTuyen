@@ -103,7 +103,7 @@
             android:fontFamily="@font/latoheavy"
             android:gravity="center_horizontal|center_vertical"
             android:lineSpacingExtra="3sp"
-            android:text="CareVault"
+            android:text="YOUR HEALTH"
             android:textColor="#ffffff"
             android:textSize="28sp"
             app:layout_constraintBottom_toBottomOf="parent"

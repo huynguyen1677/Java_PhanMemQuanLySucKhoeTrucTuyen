@@ -42,14 +42,14 @@
         <!-- Hiển thị thông tin sức khỏe -->
         <RelativeLayout
             android:id="@+id/health_info_frame"
-            android:layout_width="355dp"
-            android:layout_height="wrap_content"
+            android:layout_width="377dp"
+            android:layout_height="182dp"
             android:layout_margin="8dp"
             android:background="@drawable/selected_background"
             android:elevation="10dp"
-            app:layout_constraintTop_toBottomOf="@+id/health_record_title"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintTop_toBottomOf="@+id/health_record_title">
 
             <!-- Hiển thị tên -->
             <TextView
@@ -70,7 +70,7 @@
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="45dp"
                 android:fontFamily="@font/latoheavy"
                 android:gravity="top"
                 android:text="Ngày sinh: 01/01/1990"
@@ -83,7 +83,7 @@
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="70dp"
                 android:fontFamily="@font/latoheavy"
                 android:gravity="top"
                 android:text="Giới tính: Nam"
@@ -96,7 +96,7 @@
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="95dp"
                 android:fontFamily="@font/latoheavy"
                 android:gravity="top"
                 android:text="Bệnh lý 1: Tăng huyết áp"
@@ -109,10 +109,21 @@
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="120dp"
                 android:fontFamily="@font/latoheavy"
                 android:gravity="top"
                 android:text="Bệnh lý 2: Tiểu đường"
+                android:textColor="#1D212D"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/textViewDisease3"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="145dp"
+                android:fontFamily="@font/latoheavy"
+                android:gravity="top"
+                android:text="Bệnh lý 3: Tiểu đường"
                 android:textColor="#1D212D"
                 android:textSize="18sp" />
         </RelativeLayout>
@@ -123,7 +134,7 @@
             android:layout_width="355dp"
             android:layout_height="65dp"
             android:layout_marginStart="28dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="88dp"
             android:background="@drawable/selected_background"
             android:fontFamily="@font/latobold"
             android:gravity="center"
@@ -131,8 +142,9 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="23sp"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/health_info_frame" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
